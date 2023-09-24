@@ -17,13 +17,13 @@ import { CardProject } from "./components/CardProject/CardProject";
 
 export function Projects() {
   return (
-    <div>
+    <div id="projects" className={style.projects}>
       <div className="container">
         <div className={style.wrapperProjects}>
           <div className={style.lProjects}>
             <h2 className={style.titleProjects}>Projetos</h2>
             <p className={style.textProjects}>
-              Cada aplicação representa um desafio único e
+              Cada aplicação representa um desafio único de uma solução
             </p>
           </div>
           <div className={style.rProjects}>

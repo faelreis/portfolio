@@ -1,5 +1,5 @@
 .skills {
-  padding: 120px 0px 100px 0px;
+  padding: 150px 0px 100px 0px;
 
   .wrapperSkills {
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: space-between;
     .lSkills {
       position: sticky;
-      top: 10%;
+      top: 15%;
       max-width: 385px;
       .titleSkills {
         font-size: 40px;

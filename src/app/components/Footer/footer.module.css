@@ -1,0 +1,15 @@
+.footer {
+  padding-bottom: 60px;
+  .wrapperFooter {
+    border-top: 1px solid var(--strokeColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .textFooter {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 16px;
+      color: #565656;
+    }
+  }
+}

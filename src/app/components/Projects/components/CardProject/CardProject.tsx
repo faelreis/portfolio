@@ -19,7 +19,7 @@ export function CardProject({
   repCase: string;
 }) {
   return (
-    <Link href={linkCase} className={style.cardProject}>
+    <Link target="_blank" href={linkCase} className={style.cardProject}>
       <div className={style.tCardProject}>
         <div className={style.wrapperProjectThumb}>
           <Image
@@ -38,11 +38,11 @@ export function CardProject({
           ))}
         </div>
         <div className={style.wrapperButtons}>
-          <Link className={style.liveProject} href={linkCase}>
+          <Link target="_blank" className={style.liveProject} href={linkCase}>
             <span className={style.textBtn}>Acessar</span>
             <Image className={style.arrowBtn} src={arrowButton} alt="Arrow" />
           </Link>
-          <Link className={style.repProject} href={repCase}>
+          <Link target="_blank" className={style.repProject} href={repCase}>
             <Image src={githubLogo} alt="Github" />
           </Link>
         </div>

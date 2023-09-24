@@ -31,7 +31,7 @@ import logoWebpack from "../../assets/logos/webpack.svg";
 
 export function Skills() {
   return (
-    <div className={style.skills}>
+    <div id="skills" className={style.skills}>
       <div className="container">
         <div className={style.wrapperSkills}>
           <div className={style.lSkills}>

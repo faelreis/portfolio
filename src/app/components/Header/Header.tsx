@@ -13,9 +13,9 @@ export function Header() {
           <nav>
             <ul className={style.wrapperNav}>
               <li className={style.link}><a href="#about">Sobre</a></li>
-              <li className={style.link}>Habilidades</li>
-              <li className={style.link}>Projetos</li>
-              <li className={style.link}>Contato</li>
+              <li className={style.link}><a href="#skills">Habilidades</a></li>
+              <li className={style.link}><a href="#projects">Projetos</a></li>
+              <li className={style.link}><a href="#contact">Contato</a></li>
             </ul>
           </nav>
         </div>

@@ -14,7 +14,7 @@ export function Hero() {
             <h2 className={style.name}>RAFAEL REIS FRANCO</h2>
             <h1 className={style.title}>
               Especialista em <strong className={style.titleBold}>Desenvolvimento Front-End & Design</strong></h1>
-            <Link href="" className={style.btn}>
+            <Link href="#projects" className={style.btn}>
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
             </Link>

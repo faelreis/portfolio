@@ -2,8 +2,8 @@
   --mColor: #007bff; /* Cor primária */
   --sColor: #ff5722; /* Cor secundária */
   --bgMainColor: #000000; /* Cor de fundo */
-  --strokeColor: #2b2b2b; /* Cor de borda */
-  --bgMainColor: #080808; /* Cor de fundo para caixas */
+  --strokeColor: #2c2c2c; /* Cor de borda */
+  --bgMainColor: #070707; /* Cor de fundo para caixas */
   --textColor: #ffffff; /* Cor de texto */
   --sTextColor: #b6b6b6; /* Cor de secundária */
 }
@@ -23,6 +23,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -44,4 +45,33 @@ body {
   max-width: 124.6rem;
   margin: 0 auto;
   padding: 0rem 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #141415;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFFFFF70;
+}
+
+
+html, body{
+  cursor: url("/cursor-default.svg"), auto;
+}
+
+a:hover,
+button:hover,
+[type="submit"]:hover,
+[type="button"]:hover {
+  cursor: url("/cursor-hover.svg"), pointer;
 }

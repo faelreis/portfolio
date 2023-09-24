@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <div className={style.contact}>
+    <div id="contact" className={style.contact}>
       <div className="container">
         <div className={style.wrapperContact}>
           <div className={style.lContact}>

@@ -1,5 +1,6 @@
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { MarqueeLine } from "./components/MarqueeLine/MarqueeLine";
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }

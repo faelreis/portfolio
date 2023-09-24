@@ -1,3 +1,7 @@
+.projects {
+  padding: 50px 0px 0px 0px;
+}
+
 .wrapperProjects {
   padding: 100px 0px 120px 0px;
   display: flex;
@@ -6,7 +10,7 @@
 
   .lProjects {
     position: sticky;
-    top: 10%;
+    top: 15%;
     max-width: 385px;
     .titleProjects {
       font-size: 40px;
@@ -15,9 +19,13 @@
     .textProjects {
       font-size: 18px;
       color: var(--sTextColor);
+      width: 100%;
+      max-width: 350px;
     }
   }
   .rProjects {
+    width: 100%;
+    max-width: 55%;
     .wrapperCardsProjects {
       display: flex;
       align-items: center;
