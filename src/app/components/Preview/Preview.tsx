@@ -4,7 +4,7 @@ export function Preview() {
   return (
     <div className={style.preview}>
       <div className="container">
-        <video className={style.videoPreview} loop autoPlay muted plays-inline>
+        <video className={style.videoPreview} loop autoPlay muted plays-inline="true">
           <source src="/preview-projects.mp4" type="video/mp4" />
           Seu navegador não suporta a reprodução de vídeo.
         </video>

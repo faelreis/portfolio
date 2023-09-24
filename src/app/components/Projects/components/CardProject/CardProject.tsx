@@ -19,15 +19,17 @@ export function CardProject({
   repCase: string;
 }) {
   return (
-    <Link target="_blank" href={linkCase} className={style.cardProject}>
+    <div className={style.cardProject}>
       <div className={style.tCardProject}>
         <div className={style.wrapperProjectThumb}>
-          <Image
-            className={style.projectThumb}
-            src={imageCase}
-            alt={nameCase}
-            quality={100}
-          />
+          <Link target="_blank" href={linkCase}>
+            <Image
+              className={style.projectThumb}
+              src={imageCase}
+              alt={nameCase}
+              quality={100}
+            />
+          </Link>
         </div>
       </div>
       <div className={style.bCardProject}>
@@ -38,7 +40,7 @@ export function CardProject({
           ))}
         </div>
         <div className={style.wrapperButtons}>
-          <Link target="_blank" className={style.liveProject} href={linkCase}>
+          <Link target="_blank" href={linkCase} className={style.liveProject}>
             <span className={style.textBtn}>Acessar</span>
             <Image className={style.arrowBtn} src={arrowButton} alt="Arrow" />
           </Link>
@@ -47,6 +49,6 @@ export function CardProject({
           </Link>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
