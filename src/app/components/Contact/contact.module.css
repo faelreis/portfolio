@@ -1,0 +1,49 @@
+.contact {
+  padding: 100px 0px;
+  .wrapperContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .lContact {
+      .wrapperEmail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all .4s ease;
+        .textEmail {
+          font-size: 20px;
+          border-bottom: 1px solid #000000;
+          transition: all 0.4s ease;
+        }
+        .textEmail:hover {
+          border-bottom: 1px solid #ffffff;
+        }
+        .arrowBtn {
+          margin-top: 4px;
+          transition: all 0.4s ease;
+          transform: rotate(-45deg);
+        }
+      }
+      .wrapperEmail:hover .arrowBtn {
+        transform: rotate(0deg);
+      }
+      .wrapperEmail:hover {
+        opacity: 50%;
+      }
+    }
+    .rContact {
+      .wrapperContactLinks {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .linkContact {
+          font: 19px;
+          transition: opacity 0.4s ease;
+        }
+        .linkContact:hover {
+          opacity: 50%;
+        }
+      }
+    }
+  }
+}

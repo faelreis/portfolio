@@ -5,7 +5,7 @@ import shapeDetail from "../../assets/shape.svg";
 
 export function About() {
   return (
-    <div className={style.about}>
+    <div id="about" className={style.about}>
       <div className="container">
         <div className={style.wrapperAbout}>
           <div className={style.lAbout}>

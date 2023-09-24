@@ -3,6 +3,7 @@ import Image from "next/image";
 import RafaelReisFranco from "../../assets/rafaelreisfranco-frontend.png";
 import shapeDetail from "../../assets/shape.svg";
 import arrow from "../../assets/arrow.svg";
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -13,10 +14,10 @@ export function Hero() {
             <h2 className={style.name}>RAFAEL REIS FRANCO</h2>
             <h1 className={style.title}>
               Especialista em <strong className={style.titleBold}>Desenvolvimento Front-End & Design</strong></h1>
-            <a href="" className={style.btn}>
+            <Link href="" className={style.btn}>
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
-            </a>
+            </Link>
           </div>
           <div className={style.rHero}>
             <div className={style.wrapperImgHero}>

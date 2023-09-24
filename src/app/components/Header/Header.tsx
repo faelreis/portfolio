@@ -12,9 +12,10 @@ export function Header() {
           </div>
           <nav>
             <ul className={style.wrapperNav}>
-              <li className={style.link}>Sobre</li>
+              <li className={style.link}><a href="#about">Sobre</a></li>
               <li className={style.link}>Habilidades</li>
               <li className={style.link}>Projetos</li>
+              <li className={style.link}>Contato</li>
             </ul>
           </nav>
         </div>

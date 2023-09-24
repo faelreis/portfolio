@@ -1,5 +1,5 @@
 .skills {
-  padding: 100px 0px;
+  padding: 120px 0px 100px 0px;
 
   .wrapperSkills {
     display: flex;
@@ -20,7 +20,13 @@
     }
 
     .rSkills {
-      height: 3000px;
+      width: 100%;
+      max-width: 55%;
+      .wrapperCardsSkills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+      }
     }
   }
 }

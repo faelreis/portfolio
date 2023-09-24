@@ -1,0 +1,76 @@
+.cardProject {
+  transition: all 0.5s ease;
+  background-color: var(--bgMainColor);
+  border: 1px solid var(--strokeColor);
+  padding: 30px;
+  border-radius: 10px;
+
+  .tCardProject {
+    .wrapperProjectThumb {
+      border-radius: 8px;
+      margin-bottom: 50px;
+      overflow: hidden;
+    }
+    .projectThumb {
+      transition: all 0.4s ease;
+    }
+  }
+
+  .bCardProject {
+    .nameProject {
+      font-size: 30px;
+    }
+    .wrapperNameTechs {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 20px;
+      margin-bottom: 45px;
+    }
+    .wrapperButtons {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .liveProject {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .textBtn {
+          font-size: 22px;
+          transition: all 0.4s ease;
+          border-bottom: 1px solid var(--bgMainColor);
+        }
+        .arrowBtn {
+          transition: all 0.4s ease;
+          transform: rotate(-45deg);
+          margin-top: 2px;
+        }
+      }
+      .liveProject:hover .arrowBtn {
+        opacity: 50%;
+        transform: rotate(0deg);
+      }
+
+      .liveProject:hover .textBtn {
+        opacity: 50%;
+        border-bottom: 1px solid #ffffff;
+      }
+
+      .repProject {
+        transition: opacity 0.4s ease;
+      }
+
+      .repProject:hover {
+        opacity: 50%;
+      }
+    }
+  }
+}
+
+.cardProject:hover {
+  background-color: #0a0a0a;
+}
+
+.cardProject:hover .projectThumb {
+  transform: scale(1.1);
+}

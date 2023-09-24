@@ -1,0 +1,5 @@
+.boxNameTech {
+  padding: 5px 15px;
+  border: 1px solid var(--strokeColor);
+  border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+.cardLogo {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid #1d1d1d;
+  transition: all 0.4s ease-in-out;
+}
+
+.cardLogo:hover {
+  transform: scale(1.2);
+}
+
+.wrapperLogoCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0px;
+
+  .logoCard {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+.boxNameLogo {
+  padding: 10px 0px;
+  border-top: 1px solid #1d1d1d;
+  background-color: #070707;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}

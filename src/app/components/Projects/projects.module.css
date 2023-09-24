@@ -1,0 +1,28 @@
+.wrapperProjects {
+  padding: 100px 0px 120px 0px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  .lProjects {
+    position: sticky;
+    top: 10%;
+    max-width: 385px;
+    .titleProjects {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .textProjects {
+      font-size: 18px;
+      color: var(--sTextColor);
+    }
+  }
+  .rProjects {
+    .wrapperCardsProjects {
+      display: flex;
+      align-items: center;
+      gap: 100px;
+      flex-direction: column;
+    }
+  }
+}
