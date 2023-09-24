@@ -1,0 +1,80 @@
+.about {
+  padding: 100px 0px;
+}
+
+.wrapperAbout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lAbout {
+  .wrapperImgAbout {
+    position: relative;
+    .rafaelAbout {
+      border-radius: 10px;
+      border: 1px solid var(--strokeColor);
+    }
+    .shape {
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      z-index: 1;
+      animation: rotateShape 7s ease-in-out infinite;
+    }
+  }
+}
+
+.rAbout {
+  width: 100%;
+  max-width: 484px;
+  .aboutName {
+    font-size: 40px;
+    margin-bottom: 20px;
+    .aboutNameBold{
+        font-size: 40px;
+        font-weight: 500;
+    }
+  }
+
+  .aboutText {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: var(--sTextColor);
+    width: 100%;
+    max-width: 455px;
+  }
+  
+
+  .wrapperBigNumbers {
+    display: flex;
+    gap: 40px;
+  }
+
+  .boxBigNumber {
+    width: 100%;
+    max-width: 185px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .bigNumber {
+      font-size: 45px;
+    }
+    .descBigNumber {
+      text-align: 15px;
+      color: var(--sTextColor);
+    }
+  }
+}
+
+@keyframes rotateShape {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,8 @@
+.preview {
+  padding: 70px 0px;
+}
+.videoPreview {
+  width: 100%;
+  border: 1px solid var(--strokeColor);
+  border-radius: 10px;
+}

@@ -1,0 +1,26 @@
+.header {
+  padding: 50px 0px;
+}
+
+.wrapperHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapperNav {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  gap: 70px;
+}
+
+.link {
+  font-size: 18px;
+  transition: opacity 0.4s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 60%;
+}
