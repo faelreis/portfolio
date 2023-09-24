@@ -1,0 +1,23 @@
+.marqueeWrapper {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 27px 0px;
+  border-top: solid 1px #202020;
+  border-bottom: solid 1px #202020;
+
+  .marqueeLine {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    .tagLine {
+      font-size: 16px;
+    }
+    .lastTagLine {
+      margin-right: 100px;
+    }
+  }
+}

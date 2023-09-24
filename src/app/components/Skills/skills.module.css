@@ -1,0 +1,26 @@
+.skills {
+  padding: 100px 0px;
+
+  .wrapperSkills {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    .lSkills {
+      position: sticky;
+      top: 10%;
+      max-width: 385px;
+      .titleSkills {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .textSkills {
+        font-size: 18px;
+        color: var(--sTextColor);
+      }
+    }
+
+    .rSkills {
+      height: 3000px;
+    }
+  }
+}
