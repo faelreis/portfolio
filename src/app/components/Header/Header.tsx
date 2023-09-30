@@ -2,7 +2,7 @@ import style from "./header.module.css";
 import Image from "next/image";
 import logoRafael from "../../assets/rafael-logo.svg";
 
-export function Header() {
+export async function Header() {
   return (
     <header className={style.header}>
       <div className="container">

@@ -31,3 +31,13 @@
 .link:hover {
   opacity: 60%;
 }
+
+@media (max-width: 780px) {
+  .wrapperHeader{
+    
+  }
+  .wrapperNav {
+    display: none;
+    justify-content: center;
+  }
+}

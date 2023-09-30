@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
         .textEmail {
           font-size: 20px;
           border-bottom: 1px solid #000000;
@@ -42,6 +42,42 @@
         }
         .linkContact:hover {
           opacity: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .contact {
+    .wrapperContact {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    .wrapperContact {
+      .lContact {
+        .wrapperEmail {
+          .textEmail {
+            font-size: 17px;
+          }
+        }
+      }
+      .rContact {
+        .wrapperContactLinks {
+          gap: 50px;
+          flex-direction: column;
+          .linkContact {
+            font: 19px;
+            transition: opacity 0.4s ease;
+          }
+          .linkContact:hover {
+            opacity: 50%;
+          }
         }
       }
     }

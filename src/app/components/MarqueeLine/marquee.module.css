@@ -21,3 +21,19 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .marqueeWrapper {
+    padding: 20px 0px;
+    .marqueeLine {
+      gap: 50px;
+
+      .tagLine {
+        font-size: 15px;
+      }
+      .lastTagLine {
+        margin-right: 50px;
+      }
+    }
+  }
+}

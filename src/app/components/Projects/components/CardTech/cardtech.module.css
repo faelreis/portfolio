@@ -3,3 +3,9 @@
   border: 1px solid var(--strokeColor);
   border-radius: 5px;
 }
+
+@media (max-width: 745px) {
+  .nameTech {
+    font-size: 15px;
+  }
+}

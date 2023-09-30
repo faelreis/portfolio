@@ -1,84 +1,202 @@
 .hero {
   padding: 200px 0px 130px 0px;
-}
-.wrapperHero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.lHero {
-  width: 100%;
-  max-width: 500px;
-
-  .title {
-    font-weight: 400;
-    font-size: 45px;
-    margin: 10px 0px 40px 0px;
-    .titleBold {
-      font-weight: 500;
-      font-size: 45px;
-    }
-  }
-
-  .name {
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--sTextColor);
-  }
-
-  .btn {
+  .wrapperHero {
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 250px;
-  }
+    justify-content: space-between;
 
-  .btnText {
-    font-size: 18px;
-    transition: all 0.4s ease;
-    border-bottom: 1px solid #000000;
-  }
+    /* Left side */
+    .lHero {
+      width: 100%;
+      max-width: 500px;
 
-  .arrow {
-    transition: transform 0.4s ease;
-    margin-top: 3px;
-  }
+      .title {
+        font-weight: 400;
+        font-size: 45px;
+        margin: 10px 0px 40px 0px;
+        .titleBold {
+          font-weight: 500;
+          font-size: 45px;
+        }
+      }
 
-  .btnText:hover {
-    border-bottom: 1px solid #4b4b4b;
-  }
+      .name {
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--sTextColor);
+      }
 
-  .btn:hover .arrow {
-    transform: rotate(-45deg);
-    opacity: 0.6;
-  }
+      .btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 300px;
+      }
 
-  .btn:hover .btnText {
-    opacity: 0.6;
+      .btnText {
+        font-size: 20px;
+        transition: all 0.4s ease;
+        border-bottom: 1px solid #000000;
+      }
+
+      .arrow {
+        transition: transform 0.4s ease;
+        margin-top: 3px;
+      }
+
+      .btnText:hover {
+        border-bottom: 1px solid #4b4b4b;
+      }
+
+      .btn:hover .arrow {
+        transform: rotate(-45deg);
+        opacity: 0.6;
+      }
+
+      .btn:hover .btnText {
+        opacity: 0.6;
+      }
+    }
+
+    /* Right side */
+    .rHero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      .wrapperImgHero {
+        position: relative;
+        width: 100%;
+
+        .rafaelImage {
+          border-radius: 10px;
+          border: 1px solid var(--strokeColor);
+        }
+
+        .shape {
+          position: absolute;
+          z-index: 1;
+          left: -30px;
+          top: -30px;
+          animation: rotateShape 7s ease-in-out infinite;
+        }
+      }
+    }
   }
 }
 
-.rHero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .wrapperImgHero {
-    position: relative;
-
-    .rafaelImage {
-      border-radius: 10px;
-      border: 1px solid var(--strokeColor);
+@media (max-width: 970px) {
+  .hero {
+    padding: 140px 0px 90px 0px;
+    .wrapperHero {
+      .lHero {
+        max-width: 450px;
+        .title {
+          font-size: 37px;
+          .titleBold {
+            font-size: 37px;
+          }
+        }
+      }
     }
+  }
+}
 
-    .shape {
-      position: absolute;
-      z-index: 1;
-      left: -30px;
-      top: -30px;
-      animation: rotateShape 7s ease-in-out infinite;
+@media (max-width: 840px) {
+  .hero {
+    padding: 135px 0px 90px 0px;
+    .wrapperHero {
+      .rHero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .wrapperImgHero {
+          .shape {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .hero {
+    padding: 120px 0px 40px 0px;
+
+    .wrapperHero {
+      flex-direction: column;
+      align-items: left;
+      /* Left side */
+      .lHero {
+        max-width: 100%;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        .title {
+          font-size: 40px;
+          max-width: 450px;
+          .titleBold {
+            font-size: 40px;
+          }
+        }
+
+        .name {
+          font-size: 15px;
+        }
+      }
+
+      /* Right side */
+      .rHero {
+        .wrapperImgHero {
+          .rafaelImage {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 437px) {
+  .hero {
+    .wrapperHero {
+      .lHero {
+        .title {
+          font-size: 3rem;
+          .titleBold {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .hero {
+    .wrapperHero {
+      .lHero {
+        .title {
+          font-size: 2.5rem;
+          .titleBold {
+            font-size: 2.5rem;
+          }
+        }
+        .btn {
+          max-width: 100%;
+        }
+
+        .btnText {
+          font-size: 17px;
+        }
+      }
     }
   }
 }

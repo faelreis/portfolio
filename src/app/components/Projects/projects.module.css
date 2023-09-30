@@ -34,3 +34,26 @@
     }
   }
 }
+
+@media (max-width: 970px) {
+  .wrapperProjects {
+    padding: 30px 0px;
+    flex-direction: column;
+
+    .lProjects {
+      position: static;
+      top: 15%;
+      max-width: 385px;
+    }
+    .rProjects {
+      margin-top: 40px;
+      max-width: 100%;
+      .wrapperCardsProjects {
+        display: flex;
+        align-items: start;
+        gap: 100px;
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -14,9 +14,9 @@ export function About() {
                 className={style.rafaelAbout}
                 src={RafaelReisFranco}
                 alt="Rafael Reis Silva Franco | Front End"
+                quality={100}
               />
               <Image
-                quality={100}
                 className={style.shape}
                 src={shapeDetail}
                 alt="Brand shape"
