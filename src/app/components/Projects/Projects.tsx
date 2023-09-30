@@ -81,7 +81,7 @@ export function Projects() {
                 imageCase={caseWeather}
                 nameCase="Weather App"
                 nameTechs={["React", "CSS", "API"]}
-                linkCase="https://github.com/faelreis/weather/"
+                linkCase="https://reis-weather.vercel.app/"
                 repCase="https://github.com/faelreis/weather/"
               />
               <CardProject
