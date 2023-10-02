@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0px 130px 0px;
+  padding: 190px 0px 130px 0px;
   .wrapperHero {
     display: flex;
     align-items: center;
@@ -89,6 +89,7 @@
 
 @media (max-width: 970px) {
   .hero {
+    padding: 150px 0px 80px 0px;
     .wrapperHero {
       .lHero {
         max-width: 450px;

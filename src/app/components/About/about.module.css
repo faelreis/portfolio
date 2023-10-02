@@ -1,5 +1,5 @@
 .about {
-  padding: 100px 0px 100px 0px;
+  padding: 80px 0px 100px 0px;
   .wrapperAbout {
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
 
 @media (max-width: 970px) {
   .about {
-    padding: 80px 0px 30px 0px;
+    padding: 60px 0px 70px 0px;
     .wrapperAbout {
       gap: 60px;
       .lAbout {
@@ -109,7 +109,7 @@
 
 @media (max-width: 780px) {
   .about {
-    padding: 80px 0px 30px 0px;
+    padding: 40px 0px 80px 0px;
     .wrapperAbout {
       gap: 60px;
       flex-direction: column-reverse;

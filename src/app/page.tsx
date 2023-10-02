@@ -13,9 +13,9 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      <MarqueeLine />
-      {/* <Preview /> */}
+      <Preview />
       <About />
+      <MarqueeLine />
       <Skills />
       <Projects />
       <Contact />
