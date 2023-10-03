@@ -1,3 +1,4 @@
+"use client";
 import style from "./skills.module.css";
 import { CardLogo } from "./components/CardLogo";
 import logoNext from "../../assets/logos/logo-next.svg";
@@ -28,6 +29,7 @@ import logoPython from "../../assets/logos/python.svg";
 import logoBootstrap from "../../assets/logos/bootstrap.svg";
 import logojQuery from "../../assets/logos/jquery.svg";
 import logoWebpack from "../../assets/logos/webpack.svg";
+import { motion } from "framer-motion";
 
 export function Skills() {
   return (
@@ -42,7 +44,13 @@ export function Skills() {
             </p>
           </div>
           <div className={style.rSkills}>
-            <div className={style.wrapperCardsSkills}>
+            <motion.div
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: "0%" }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className={style.wrapperCardsSkills}
+            >
               <CardLogo imageLogo={logoReact} nameLogo="React" />
               <CardLogo imageLogo={logoAngular} nameLogo="Angular" />
               <CardLogo imageLogo={logoNext} nameLogo="Next" />
@@ -74,7 +82,7 @@ export function Skills() {
               <CardLogo imageLogo={logoMySql} nameLogo="MySQL" />
               <CardLogo imageLogo={logoMongoDB} nameLogo="MongoDB" />
               <CardLogo imageLogo={logoPython} nameLogo="Python" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

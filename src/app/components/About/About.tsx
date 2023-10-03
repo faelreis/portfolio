@@ -1,11 +1,20 @@
+"use client";
 import style from "./about.module.css";
 import Image from "next/image";
 import RafaelReisFranco from "../../assets/rafaelreissilvafranco.png";
 import shapeDetail from "../../assets/shape.svg";
+import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <div id="about" className={style.about}>
+    <motion.div
+      initial={{ opacity: 0, y: "10%" }}
+      whileInView={{ opacity: 1, y: "0%" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      id="about"
+      className={style.about}
+    >
       <div className="container">
         <div className={style.wrapperAbout}>
           <div className={style.lAbout}>
@@ -24,7 +33,10 @@ export function About() {
             </div>
           </div>
           <div className={style.rAbout}>
-            <h2 className={style.aboutName}>Me chamo <strong className={style.aboutNameBold}>Rafael Reis</strong></h2>
+            <h2 className={style.aboutName}>
+              Me chamo{" "}
+              <strong className={style.aboutNameBold}>Rafael Reis</strong>
+            </h2>
             <p className={style.aboutText}>
               Atualmente estou cursando Sistemas de Informação, sou apaixonado
               por tecnologia, design e inovação.
@@ -46,6 +58,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

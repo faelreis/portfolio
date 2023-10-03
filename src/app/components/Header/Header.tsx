@@ -1,24 +1,39 @@
+"use client";
 import style from "./header.module.css";
 import Image from "next/image";
 import logoRafael from "../../assets/rafael-logo.svg";
+import { motion } from "framer-motion";
 
 export async function Header() {
   return (
     <header className={style.header}>
       <div className="container">
-        <div className={style.wrapperHeader}>
+        <motion.div
+          initial={{ opacity: 0, y: "10%" }}
+          whileInView={{ opacity: 1, y: "0%" }}
+          transition={{ duration: 1 }}
+          className={style.wrapperHeader}
+        >
           <div className="logo">
             <Image src={logoRafael} alt="Logo Rafael Reis Franco" />
           </div>
           <nav>
             <ul className={style.wrapperNav}>
-              <li className={style.link}><a href="#about">Sobre</a></li>
-              <li className={style.link}><a href="#skills">Habilidades</a></li>
-              <li className={style.link}><a href="#projects">Projetos</a></li>
-              <li className={style.link}><a href="#contact">Contato</a></li>
+              <li className={style.link}>
+                <a href="#about">Sobre</a>
+              </li>
+              <li className={style.link}>
+                <a href="#skills">Habilidades</a>
+              </li>
+              <li className={style.link}>
+                <a href="#projects">Projetos</a>
+              </li>
+              <li className={style.link}>
+                <a href="#contact">Contato</a>
+              </li>
             </ul>
           </nav>
-        </div>
+        </motion.div>
       </div>
     </header>
   );

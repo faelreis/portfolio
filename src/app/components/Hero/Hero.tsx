@@ -1,16 +1,24 @@
+"use client";
 import style from "./hero.module.css";
 import Image from "next/image";
 import RafaelReisFranco from "../../assets/rafaelreisfranco-frontend.png";
 import shapeDetail from "../../assets/shape.svg";
 import arrow from "../../assets/arrow.svg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function Hero() {
   return (
     <div className={style.hero}>
       <div className="container">
         <div className={style.wrapperHero}>
-          <div className={style.lHero}>
+          <motion.div
+            initial={{ opacity: 0, y: "10%" }}
+            whileInView={{ opacity: 1, y: "0%" }}
+            transition={{ duration: 1, delay: 0.2 }}
+            viewport={{ once: true }}
+            className={style.lHero}
+          >
             <h2 className={style.name}>RAFAEL REIS FRANCO</h2>
             <h1 className={style.title}>
               Especialista em{" "}
@@ -22,9 +30,15 @@ export function Hero() {
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
             </Link>
-          </div>
+          </motion.div>
           <div className={style.rHero}>
-            <div className={style.wrapperImgHero}>
+            <motion.div
+              initial={{ opacity: 0, y: "10%" }}
+              whileInView={{ opacity: 1, y: "0%" }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className={style.wrapperImgHero}
+            >
               <Image
                 quality={100}
                 className={style.rafaelImage}
@@ -36,7 +50,7 @@ export function Hero() {
                 src={shapeDetail}
                 alt="Brand shape"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
