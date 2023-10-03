@@ -7,7 +7,7 @@ export function Preview() {
     <motion.div
       initial={{ opacity: 0, y: "20%" }}
       whileInView={{ opacity: 1, y: "0%" }}
-      transition={{ ease: "easeInOut", duration: 2, delay: 0.4 }}
+      transition={{ ease: "easeInOut", duration: 2, delay: 0.3 }}
       className={style.preview}
     >
       <div className="container">
