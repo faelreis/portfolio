@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <div className={style.hero}>
+    <section className={style.hero}>
       <div className="container">
         <div className={style.wrapperHero}>
           <div
@@ -22,10 +22,15 @@ export function Hero() {
                 Desenvolvimento Front-End & Design
               </strong>
             </h1>
-            <Link href="#projects" className={style.btn}>
+            <motion.a
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+            href="#projects" className={style.btn}>
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
-            </Link>
+            </motion.a>
           </div>
           <div className={style.rHero}>
             <div
@@ -46,12 +51,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-
-
-// initial={{ opacity: 0, y: "10%" }}
-// whileInView={{ opacity: 1, y: "0%" }}
-// transition={{ duration: 0.5 }}
-// viewport={{ once: true }}

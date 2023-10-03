@@ -17,7 +17,7 @@ import { CardProject } from "./components/CardProject/CardProject";
 
 export function Projects() {
   return (
-    <div id="projects" className={style.projects}>
+    <section id="projects" className={style.projects}>
       <div className="container">
         <div className={style.wrapperProjects}>
           <div className={style.lProjects}>
@@ -130,6 +130,6 @@ export function Projects() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

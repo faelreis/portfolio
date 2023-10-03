@@ -33,7 +33,7 @@ import { motion } from "framer-motion";
 
 export function Skills() {
   return (
-    <div id="skills" className={style.skills}>
+    <section id="skills" className={style.skills}>
       <div className="container">
         <div className={style.wrapperSkills}>
           <div className={style.lSkills}>
@@ -86,6 +86,6 @@ export function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

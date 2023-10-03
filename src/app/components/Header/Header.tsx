@@ -1,17 +1,19 @@
-"use client";
+'use client'
 import style from "./header.module.css";
 import Image from "next/image";
 import logoRafael from "../../assets/rafael-logo.svg";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export async function Header() {
   return (
-    <header className={style.header}>
+    <motion.header
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ duration: 1 }}
+    viewport={{ once: true }}
+    className={style.header}>
       <div className="container">
-        <motion.div
-          initial={{ opacity: 0, y: "10%" }}
-          whileInView={{ opacity: 1, y: "0%" }}
-          transition={{ duration: 1 }}
+        <div
           className={style.wrapperHeader}
         >
           <div className="logo">
@@ -33,8 +35,8 @@ export async function Header() {
               </li>
             </ul>
           </nav>
-        </motion.div>
+        </div>
       </div>
-    </header>
+    </motion.header>
   );
 }

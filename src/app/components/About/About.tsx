@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: "10%" }}
       whileInView={{ opacity: 1, y: "0%" }}
       transition={{ duration: 1 }}
@@ -58,6 +58,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
