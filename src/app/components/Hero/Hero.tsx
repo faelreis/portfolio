@@ -12,11 +12,7 @@ export function Hero() {
     <div className={style.hero}>
       <div className="container">
         <div className={style.wrapperHero}>
-          <motion.div
-            initial={{ opacity: 0, y: "10%" }}
-            whileInView={{ opacity: 1, y: "0%" }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+          <div
             className={style.lHero}
           >
             <h2 className={style.name}>RAFAEL REIS FRANCO</h2>
@@ -30,13 +26,9 @@ export function Hero() {
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
             </Link>
-          </motion.div>
+          </div>
           <div className={style.rHero}>
-            <motion.div
-              initial={{ opacity: 0, y: "10%" }}
-              whileInView={{ opacity: 1, y: "0%" }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
+            <div
               className={style.wrapperImgHero}
             >
               <Image
@@ -50,10 +42,16 @@ export function Hero() {
                 src={shapeDetail}
                 alt="Brand shape"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+
+// initial={{ opacity: 0, y: "10%" }}
+// whileInView={{ opacity: 1, y: "0%" }}
+// transition={{ duration: 0.5 }}
+// viewport={{ once: true }}
