@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function Preview() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: "20%" }}
+      initial={{ opacity: 0, y: "10%" }}
       whileInView={{ opacity: 1, y: "0%" }}
       transition={{ duration: 3 }}
       className={style.preview}
@@ -18,7 +18,7 @@ export function Preview() {
           muted
           plays-inline="true"
         >
-          <source src="/cases-video-portfolio.mp4" type="video/mp4" />
+          <source src="/porfolio-preview.mp4" type="video/mp4" />
           Seu navegador não suporta a reprodução de vídeo.
         </video>
       </div>
