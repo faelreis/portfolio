@@ -10,10 +10,10 @@ export const wixMadefor = Wix_Madefor_Display({
 export const metadata: Metadata = {
   title: "Rafael Reis | Front-End",
   description: "Front-End developer and UI/UX Design",
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
+  icons:{
+    icon: './favicon.png',
+    apple: './favicon.png',
+  }
 };
 
 export default function RootLayout({
