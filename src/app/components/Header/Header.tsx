@@ -1,16 +1,10 @@
-'use client'
 import style from "./header.module.css";
 import Image from "next/image";
 import logoRafael from "../../assets/rafael-logo.svg";
-import { motion } from 'framer-motion'
 
 export async function Header() {
   return (
-    <motion.header
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 1 }}
-    viewport={{ once: true }}
+    <header
     className={style.header}>
       <div className="container">
         <div
@@ -37,6 +31,6 @@ export async function Header() {
           </nav>
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }

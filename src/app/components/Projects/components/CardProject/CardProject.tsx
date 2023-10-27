@@ -1,11 +1,9 @@
-"use client";
 import style from "./cardproject.module.css";
 import Image from "next/image";
 import { CardTech } from "../CardTech/CardTech";
 import arrowButton from "../../../../assets/arrow.svg";
 import githubLogo from "../../../../assets/github-logo.svg";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export function CardProject({
   imageCase,
@@ -21,11 +19,7 @@ export function CardProject({
   repCase: string;
 }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: "7%" }}
-      whileInView={{ opacity: 1, y: "0%" }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
+    <div
       className={style.cardProject}
     >
       <div className={style.tCardProject}>
@@ -57,6 +51,6 @@ export function CardProject({
           </Link>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,11 +1,8 @@
-"use client";
 import style from "./hero.module.css";
 import Image from "next/image";
 import RafaelReisFranco from "../../assets/rafaelreisfranco-frontend.png";
 import shapeDetail from "../../assets/shape.svg";
 import arrow from "../../assets/arrow.svg";
-import Link from "next/link";
-import { motion } from "framer-motion";
 
 export function Hero() {
   return (
@@ -22,15 +19,11 @@ export function Hero() {
                 Desenvolvimento Front-End & Design
               </strong>
             </h1>
-            <motion.a
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 2 }}
-            viewport={{ once: true }}
+            <a
             href="#projects" className={style.btn}>
               <span className={style.btnText}>Conheça meus projetos</span>
               <Image className={style.arrow} src={arrow} alt="btnIcon" />
-            </motion.a>
+            </a>
           </div>
           <div className={style.rHero}>
             <div

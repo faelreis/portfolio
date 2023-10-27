@@ -1,5 +1,4 @@
 import style from "./backgroundVideo.module.css";
-import Image from 'next/image';
 
 export function BackgroundVideo() {
   return (

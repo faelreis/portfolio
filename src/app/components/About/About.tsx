@@ -1,17 +1,11 @@
-"use client";
 import style from "./about.module.css";
 import Image from "next/image";
 import RafaelReisFranco from "../../assets/rafaelreissilvafranco.png";
 import shapeDetail from "../../assets/shape.svg";
-import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: "10%" }}
-      whileInView={{ opacity: 1, y: "0%" }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+    <section
       id="about"
       className={style.about}
     >
@@ -58,6 +52,6 @@ export function About() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

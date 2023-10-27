@@ -1,4 +1,3 @@
-"use client";
 import style from "./skills.module.css";
 import { CardLogo } from "./components/CardLogo";
 import logoNext from "../../assets/logos/logo-next.svg";
@@ -15,7 +14,7 @@ import logoStyledComponents from "../../assets/logos/styled-components.svg";
 import logoGulp from "../../assets/logos/logo-gulp.svg";
 import logoRedux from "../../assets/logos/logo-redux.svg";
 import logoPrismic from "../../assets/logos/logo-prismic.svg";
-import logoPrisma from "../../assets/logos/logo-prisma.svg";
+import logoBlazor from "../../assets/logos/blazor.svg";
 import logoStitches from "../../assets/logos/stitches.svg";
 import logoWordpress from "../../assets/logos/logo-wordpress.svg";
 import logoWebflow from "../../assets/logos/logo-webflow.svg";
@@ -29,7 +28,6 @@ import logoPython from "../../assets/logos/python.svg";
 import logoBootstrap from "../../assets/logos/bootstrap.svg";
 import logojQuery from "../../assets/logos/jquery.svg";
 import logoWebpack from "../../assets/logos/webpack.svg";
-import { motion } from "framer-motion";
 
 export function Skills() {
   return (
@@ -44,11 +42,7 @@ export function Skills() {
             </p>
           </div>
           <div className={style.rSkills}>
-            <motion.div
-              initial={{ opacity: 0, y: "10%" }}
-              whileInView={{ opacity: 1, y: "0%" }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true }}
+            <div
               className={style.wrapperCardsSkills}
             >
               <CardLogo imageLogo={logoReact} nameLogo="React" />
@@ -57,21 +51,18 @@ export function Skills() {
               <CardLogo imageLogo={logoJavaScript} nameLogo="JavaScript" />
               <CardLogo imageLogo={logoTypescript} nameLogo="TypeScript" />
               <CardLogo imageLogo={logojQuery} nameLogo="jQuery" />
+              <CardLogo imageLogo={logoBlazor} nameLogo="Blazor" />
               <CardLogo imageLogo={logoNode} nameLogo="Node" />
               <CardLogo imageLogo={logoRedux} nameLogo="Redux" />
               <CardLogo imageLogo={logoHTML} nameLogo="HTML" />
               <CardLogo imageLogo={logoCSS} nameLogo="CSS" />
               <CardLogo imageLogo={logoTailwind} nameLogo="Tailwind" />
-              <CardLogo
-                imageLogo={logoStyledComponents}
-                nameLogo="StyledComp"
-              />
+              <CardLogo imageLogo={logoStyledComponents} nameLogo="StyledComp" />
               <CardLogo imageLogo={logoSass} nameLogo="SASS" />
               <CardLogo imageLogo={logoBootstrap} nameLogo="Bootstrap" />
               <CardLogo imageLogo={logoStitches} nameLogo="Stitches" />
               <CardLogo imageLogo={logoGulp} nameLogo="Gulp" />
               <CardLogo imageLogo={logoPrismic} nameLogo="Prismic" />
-              <CardLogo imageLogo={logoPrisma} nameLogo="Prisma" />
               <CardLogo imageLogo={logoWebpack} nameLogo="Webpack" />
               <CardLogo imageLogo={logoGit} nameLogo="Git" />
               <CardLogo imageLogo={logoWordpress} nameLogo="WordPress" />
@@ -82,7 +73,7 @@ export function Skills() {
               <CardLogo imageLogo={logoMySql} nameLogo="MySQL" />
               <CardLogo imageLogo={logoMongoDB} nameLogo="MongoDB" />
               <CardLogo imageLogo={logoPython} nameLogo="Python" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
