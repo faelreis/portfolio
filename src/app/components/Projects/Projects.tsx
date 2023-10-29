@@ -29,18 +29,18 @@ export function Projects() {
           <div className={style.rProjects}>
             <div className={style.wrapperCardsProjects}>
               <CardProject
-                imageCase={caseEcommerce}
-                nameCase="E-commerce"
-                nameTechs={["Next", "React", "Tailwind", "Sanity"]}
-                linkCase="https://reis-ecommerce.vercel.app/"
-                repCase="https://github.com/faelreis/ecommerce"
-              />
-              <CardProject
                 imageCase={caseNeon}
                 nameCase="Neon Website"
                 nameTechs={["HTML", "SASS", "JavaScript", "Gulp"]}
                 linkCase="https://neon-reis.netlify.app/"
                 repCase="https://github.com/faelreis/lp-neon"
+              />
+              <CardProject
+                imageCase={caseEcommerce}
+                nameCase="E-commerce"
+                nameTechs={["Next", "React", "Tailwind", "Sanity"]}
+                linkCase="https://reis-ecommerce.vercel.app/"
+                repCase="https://github.com/faelreis/ecommerce"
               />
               <CardProject
                 imageCase={caseBlizzard}

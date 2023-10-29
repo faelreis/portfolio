@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: "Rafael Reis | Front-End",
   description: "Front-End developer and UI/UX Design",
   icons:{
-    icon: '/favicon.png',
-    apple: '/favicon.png',
+    icon: './favicon.png',
+    apple: './favicon.png',
   }
 };
 
