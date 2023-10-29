@@ -27,7 +27,7 @@ import logoMongoDB from "../../assets/logos/logo-mongodb.svg";
 import logoPython from "../../assets/logos/python.svg";
 import logoBootstrap from "../../assets/logos/bootstrap.svg";
 import logojQuery from "../../assets/logos/jquery.svg";
-import logoWebpack from "../../assets/logos/webpack.svg";
+import logoMaterialUi from "../../assets/logos/material-ui.svg";
 
 export function Skills() {
   return (
@@ -60,10 +60,10 @@ export function Skills() {
               <CardLogo imageLogo={logoStyledComponents} nameLogo="StyledComp" />
               <CardLogo imageLogo={logoSass} nameLogo="SASS" />
               <CardLogo imageLogo={logoBootstrap} nameLogo="Bootstrap" />
+              <CardLogo imageLogo={logoMaterialUi} nameLogo="MaterialUI" />
               <CardLogo imageLogo={logoStitches} nameLogo="Stitches" />
               <CardLogo imageLogo={logoGulp} nameLogo="Gulp" />
               <CardLogo imageLogo={logoPrismic} nameLogo="Prismic" />
-              <CardLogo imageLogo={logoWebpack} nameLogo="Webpack" />
               <CardLogo imageLogo={logoGit} nameLogo="Git" />
               <CardLogo imageLogo={logoWordpress} nameLogo="WordPress" />
               <CardLogo imageLogo={logoWebflow} nameLogo="Webflow" />
