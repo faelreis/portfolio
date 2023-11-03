@@ -32,12 +32,10 @@ export function About() {
               <strong className={style.aboutNameBold}>Rafael Reis</strong>
             </h2>
             <p className={style.aboutText}>
-              Atualmente estou cursando Sistemas de Informação, sou apaixonado
-              por tecnologia, design e inovação.
+            Sou um profissional que valoriza organização, autonomia e criatividade. Gerencio projetos de forma eficaz e criativa, sempre buscando oportunidades de crescimento e inovação. 
               <br />
               <br />
-              Ao longo desse tempo, tive a oportunidade de trabalhar com
-              diversos clientes, desenvolvendo projetos criativos e eficientes.
+              Comprometido em fornecer resultados excepcionais em cada projeto que participo.
             </p>
             <div className={style.wrapperBigNumbers}>
               <div className={style.boxBigNumber}>

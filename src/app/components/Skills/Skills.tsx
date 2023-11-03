@@ -22,7 +22,7 @@ import logoGit from "../../assets/logos/git.svg";
 import logoFigma from "../../assets/logos/logo-figma.svg";
 import logoPhotoshop from "../../assets/logos/logo-photoshop.svg";
 import logoAfterEffects from "../../assets/logos/logo-aftereffects.svg";
-import logoMySql from "../../assets/logos/logo-mysql.svg";
+import logoSQL from "../../assets/logos/sql.svg";
 import logoMongoDB from "../../assets/logos/logo-mongodb.svg";
 import logoPython from "../../assets/logos/python.svg";
 import logoBootstrap from "../../assets/logos/bootstrap.svg";
@@ -70,7 +70,7 @@ export function Skills() {
               <CardLogo imageLogo={logoFigma} nameLogo="Figma" />
               <CardLogo imageLogo={logoPhotoshop} nameLogo="Photoshop" />
               <CardLogo imageLogo={logoAfterEffects} nameLogo="After Effects" />
-              <CardLogo imageLogo={logoMySql} nameLogo="MySQL" />
+              <CardLogo imageLogo={logoSQL} nameLogo="SQL" />
               <CardLogo imageLogo={logoMongoDB} nameLogo="MongoDB" />
               <CardLogo imageLogo={logoPython} nameLogo="Python" />
             </div>
