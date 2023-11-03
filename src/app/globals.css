@@ -1,11 +1,13 @@
 :root {
-  --mColor: #007bff; /* Cor primária */
-  --sColor: #ff5722; /* Cor secundária */
   --bgMainColor: #000000; /* Cor de fundo */
   --strokeColor: #2c2c2c; /* Cor de borda */
   --bgMainColor: #070707; /* Cor de fundo para caixas */
   --textColor: #ffffff; /* Cor de texto */
   --sTextColor: #b6b6b6; /* Cor de secundária */
+}
+
+a{
+  color: #FFFFFF;
 }
 
 * {
